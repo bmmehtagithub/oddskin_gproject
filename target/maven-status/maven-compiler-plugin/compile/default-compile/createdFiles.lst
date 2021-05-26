@@ -1,0 +1,5 @@
+com\oddsking\page_object\RegistrationPage.class
+com\oddsking\taskhelpers\TaskHelpers.class
+com\oddsking\browserfactory\DriverHelpers.class
+com\oddsking\page_object\HomePage.class
+com\oddsking\page_object\IrishLottoResultPage.class

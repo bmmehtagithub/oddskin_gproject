@@ -1,0 +1,184 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-26T07:37:04.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7845946200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.oddsking.hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify Irish lotto result",
+        "description": "",
+        "id": "irish-lotto-verification;verify-irish-lotto-result",
+        "after": [
+          {
+            "result": {
+              "duration": 5394410100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.oddsking.hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6253860200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on homepage \"https://www.oddsking.com/lotto/irish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.oddsking.com/lotto/irish\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.oddsking.step_def.RegistrationStepdef.user_is_on_homepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3639930200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on result and select date and click filter button",
+            "match": {
+              "location": "com.oddsking.step_def.IrishLottoStepdef.user_click_on_result_and_select_date_and_click_filter_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5400000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can see result between selected date",
+            "match": {
+              "location": "com.oddsking.step_def.IrishLottoStepdef.user_can_see_result_between_selected_date()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Irish lotto verification",
+    "description": "  As a user\n  iI want to search lotto result\n  So i can see lotto result as per date selection",
+    "id": "irish-lotto-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/oddsking/features/irishLotto.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-26T07:37:27.524Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4641114500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.oddsking.hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify registration with valid inputs",
+        "description": "",
+        "id": "registration--verification-for-oddsking;verify-registration-with-valid-inputs",
+        "after": [
+          {
+            "result": {
+              "duration": 5405807700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.oddsking.hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6132690600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on homepage \"https://www.oddsking.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.oddsking.com/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.oddsking.step_def.RegistrationStepdef.user_is_on_homepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14410019100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter details for registration",
+            "match": {
+              "location": "com.oddsking.step_def.RegistrationStepdef.user_enter_details_for_registration()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7898453400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can see thanks for joining message",
+            "match": {
+              "location": "com.oddsking.step_def.RegistrationStepdef.user_can_see_thanks_for_joining_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Registration  verification for Oddsking",
+    "description": "  As a User\n  I want to register\n  So i can play lotto.",
+    "id": "registration--verification-for-oddsking",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/oddsking/features/registration.feature",
+    "tags": []
+  }
+]
